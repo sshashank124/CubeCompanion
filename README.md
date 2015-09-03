@@ -1,9 +1,8 @@
 #Cube Companion App for Android
 
-[![Image](https://lh3.googleusercontent.com/YrbLPBimxSflIljoWXi50eaiUb4pmUklCFUy89GKPa2LmRth54xbSrqXn7cgKlNe6w=w300-rw)
+![Image](https://lh3.googleusercontent.com/YrbLPBimxSflIljoWXi50eaiUb4pmUklCFUy89GKPa2LmRth54xbSrqXn7cgKlNe6w=w300-rw)
 
-Download from Play Store
-](https://play.google.com/store/apps/details?id=com.qbix.cubecompanion&hl=en)
+[Download from Play Store](https://play.google.com/store/apps/details?id=com.qbix.cubecompanion&hl=en)
 
 ###All-in-one resource for cubing enthusiasts
 
