@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/spacing_1.0">
+
+        <TextView
+            android:id="@+id/notation_text0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/solving_method_description_text"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/spacing_1.0">
+
+            <TextView
+                android:id="@+id/notation_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing_1.0"
+                android:layout_marginStart="@dimen/spacing_1.0"
+                style="@style/solving_method_description_text"/>
+
+            <ImageView
+                android:id="@+id/notation_cube_beg_1_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/cube_orientation"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/notation_text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/solving_method_description_text"
+            android:layout_marginTop="@dimen/spacing_1.0"/>
+
+        <ImageView
+            android:id="@+id/notation_cube_beg_1_2"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="@dimen/spacing_1.0"
+            android:contentDescription="@string/cube_solved"/>
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1.0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/notation_cube_beg_1_3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/spacing_1.0"
+                    android:contentDescription="@string/cube_move_example"/>
+
+                <ImageView
+                    android:id="@+id/notation_cube_beg_1_4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/spacing_1.0"
+                    android:contentDescription="@string/cube_move_example"/>
+
+                <ImageView
+                    android:id="@+id/notation_cube_beg_1_5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    android:padding="@dimen/spacing_1.0"
+                    android:contentDescription="@string/cube_move_example"/>
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</ScrollView>

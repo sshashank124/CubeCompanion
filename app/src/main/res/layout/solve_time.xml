@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_0.5"
+    android:paddingLeft="@dimen/spacing_0.75"
+    android:paddingStart="@dimen/spacing_0.75"
+    android:background="@drawable/solve_time_list_bg">
+
+    <TextView
+        android:id="@+id/solve_time_list_item_index"
+        android:layout_weight="3"
+        style="@style/times_list_text_items"
+        android:gravity="start"/>
+
+    <TextView
+        android:id="@+id/solve_time_list_item_time"
+        android:layout_weight="7"
+        android:textSize="20sp"
+        style="@style/times_list_text_items"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/solve_time_list_item_date"
+        android:layout_weight="4"
+        style="@style/times_list_text_items"
+        android:gravity="end"/>
+
+    <ImageView
+        android:id="@+id/solve_time_list_item_delete"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginRight="@dimen/spacing_0.5"
+        android:layout_marginEnd="@dimen/spacing_0.5"
+        android:src="@drawable/delete"
+        android:layout_gravity="center_vertical"/>
+
+</LinearLayout>

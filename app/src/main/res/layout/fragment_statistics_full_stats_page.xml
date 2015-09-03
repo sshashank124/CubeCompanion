@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qbix.cubecompanion.StatisticsFullStatsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/puzzle_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inset_view_blue"
+        style="@style/description_tab"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/spacing_0.5">
+
+            <TableRow
+                style="@style/full_stats_header"
+                android:layout_marginTop="0dp">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_total_solves"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_total_solves"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_overall_average"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_overall_average"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_best_time"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_worst_time"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_best"
+                    android:lines="2"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_worst"
+                    android:lines="2"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_avg_5"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_sub_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_latest"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_best"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_worst"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_5_latest"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_5_best"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_5_worst"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_avg_12"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_sub_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_latest"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_best"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_worst"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_12_latest"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_12_best"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_12_worst"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_ema"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_sub_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_ema_100"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_ema_1000"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_ema_overall"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_ema_100"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_ema_1000"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_ema_overall"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_total_solve_time"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_total_solve_time"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_solves_1_day"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_sub_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_most"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_least"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_most_solves_day"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_least_solves_day"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_avg_solves_day"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_sub_header">
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_avg_solves_day_with0"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_title"
+                    android:text="@string/stats_avg_solves_day_without0"/>
+            </TableRow>
+
+            <TableRow
+                style="@style/full_stats_content">
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_solves_with0"/>
+
+                <View style="@style/vertical_divider"/>
+
+                <TextView
+                    style="@style/full_stats_text_views_value"
+                    android:id="@+id/full_stats_average_solves_without0"/>
+            </TableRow>
+
+        </TableLayout>
+
+    </ScrollView>
+
+</LinearLayout>

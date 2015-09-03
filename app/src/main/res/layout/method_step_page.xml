@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/light_green"
+            android:padding="@dimen/spacing_0.5">
+
+            <ImageView
+                android:id="@+id/start_state"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/cube_step_start_state"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_right"
+                android:contentDescription="@string/arrow_right"/>
+
+            <ImageView
+                android:id="@+id/end_state"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:scaleType="centerInside"
+                android:contentDescription="@string/cube_step_end_state"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_1.0"
+            style="@style/solving_method_description_text"/>
+
+        <LinearLayout
+            android:id="@+id/algorithms_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/spacing_1.0"
+            android:background="@color/gray_0.5"
+            android:divider="@drawable/horizontal_divider"
+            android:showDividers="middle"
+            android:dividerPadding="@dimen/spacing_0.5"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/red">
+
+    <TextView
+        android:id="@+id/dialog_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/spacing_1.0"
+        android:paddingRight="@dimen/spacing_1.0"
+        android:paddingTop="@dimen/spacing_1.5"
+        android:paddingBottom="@dimen/spacing_1.5"
+        android:textSize="20sp"
+        android:lineSpacingMultiplier="1.5"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialog_button1"
+            style="@style/button"
+            android:layout_weight="1"/>
+
+        <View style="@style/vertical_divider"/>
+
+        <Button
+            android:id="@+id/dialog_button2"
+            style="@style/button"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+</LinearLayout>

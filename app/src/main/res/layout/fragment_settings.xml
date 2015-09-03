@@ -1,0 +1,143 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qbix.cubecompanion.SettingsFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_0.5">
+
+        <LinearLayout
+            android:id="@+id/settings_puzzle_type"
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_switch_puzzles"
+                style="@style/settings_item_text"/>
+
+            <TextView
+                android:id="@+id/settings_puzzle_text"
+                style="@style/settings_item_text_secondary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_show_scramble"
+                style="@style/settings_item_text"/>
+
+            <CheckBox
+                android:id="@+id/settings_show_scramble"
+                style="@style/settings_item_checkbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_timer_start_delay"
+                style="@style/settings_item_text"/>
+
+            <CheckBox
+                android:id="@+id/settings_timer_start_delay"
+                style="@style/settings_item_checkbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_timer_inspection_time"
+                style="@style/settings_item_text"/>
+
+            <CheckBox
+                android:id="@+id/settings_timer_inspection_time"
+                style="@style/settings_item_checkbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/settings_msim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:text="@string/settings_msim"
+                    style="@style/settings_item_text"/>
+
+                <TextView
+                    android:id="@+id/settings_msim_text"
+                    style="@style/settings_item_text_secondary"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/spacing_0.5">
+
+                <SeekBar
+                    android:id="@+id/settings_msim_count"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:max="7"/>
+
+                <TextView
+                    android:id="@+id/settings_msim_count_text"
+                    style="@style/settings_item_text_secondary"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginTop="@dimen/spacing_0.5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/settings_msim_store_time_warning"
+                android:textColor="@color/light_yellow"
+                style="@style/settings_item_text"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_delete_confirmation"
+                style="@style/settings_item_text"/>
+
+            <CheckBox
+                android:id="@+id/settings_delete_confirmation"
+                style="@style/settings_item_checkbox"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/settings_item">
+
+            <TextView
+                android:text="@string/settings_exit_confirmation"
+                style="@style/settings_item_text"/>
+
+            <CheckBox
+                android:id="@+id/settings_exit_confirmation"
+                style="@style/settings_item_checkbox"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

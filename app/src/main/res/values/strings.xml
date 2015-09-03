@@ -1,0 +1,273 @@
+<resources>
+    <string name="app_name">Cube Companion</string>
+
+    <string name="drawer_item_icon_description">Drawer Item Icon</string>
+
+    <string name="time_0">00:00.00</string>
+    <string name="time_empty">--:--.--</string>
+    <string name="count_empty">---</string>
+
+    <string name="timer_clear">Clear Timer</string>
+    <string name="timer_cancel">Cancel</string>
+    <string name="timer_new_session">New Session</string>
+
+    <string name="statistics_solves">Solves:</string>
+    <string name="statistics_average">Average:</string>
+    <string name="statistics_best">Best:</string>
+    <string name="statistics_worst">Worst:</string>
+    <string name="statistics_average_5">Ao5:</string>
+    <string name="statistics_average_12">Ao12:</string>
+
+    <string name="penalty_2">+2</string>
+    <string name="penalty_DNF">D\nN\nF</string>
+
+    <string name="times_list_delete_all">Delete all times</string>
+
+    <string name="stats_total_solves">Total Solves</string>
+    <string name="stats_overall_average">Overall Average</string>
+    <string name="stats_best_time">Best Time</string>
+    <string name="stats_worst_time">Worst Time</string>
+    <string name="stats_latest">Latest</string>
+    <string name="stats_best">Best</string>
+    <string name="stats_worst">Worst</string>
+    <string name="stats_avg_5">Average of 5</string>
+    <string name="stats_avg_12">Average of 12</string>
+    <string name="stats_ema">Exponential Moving Average</string>
+    <string name="stats_ema_100">EMA100</string>
+    <string name="stats_ema_1000">EMA1000</string>
+    <string name="stats_ema_overall">Overall</string>
+    <string name="stats_total_solve_time">Total Solve Time</string>
+    <string name="stats_solves_1_day">Solves in 1 day</string>
+    <string name="stats_most">Most</string>
+    <string name="stats_least">Least</string>
+    <string name="stats_avg_solves_day">Average solves / day</string>
+    <string name="stats_avg_solves_day_with0">Including days with no solves</string>
+    <string name="stats_avg_solves_day_without0">Excluding days with no solves</string>
+
+    <string-array name="beg_notation_page">
+        <item>
+            We use different letters to represent turning each of the 6 faces of the cube when
+            solving the cube. They are as follows:
+        </item>
+        <item>
+            <![CDATA[
+            <font color="#ff5800">U</font> - Up<br/>
+            <font color="#ff5800">F</font> - Front<br/>
+            <font color="#ff5800">L</font> - Left<br/>
+            <font color="#ff5800">R</font> - Right<br/>
+            <font color="#ff5800">D</font> - Down<br/>
+            <font color="#ff5800">B</font> - Back
+            ]]>
+        </item>
+        <item>
+            <![CDATA[
+            Throughout the guide, the cube will be held as shown above to help understand what turns
+            are being performed.<br/><br/>
+            Each letter can also either be accompanied by a <font color=\"#ff5800\">\'</font>
+            or a <font color=\"#ff5800\">2</font> as in <font color=\"#ff5800\">U</font>,
+            <font color=\"#ff5800\">U\'</font> or <font color=\"#ff5800\">U2</font>.<br/>
+            Each of these moves means the following:<br/><br/>
+            <font color="#ff5800">U</font>  - rotate the \"Up\" face clockwise by a quarter turn<br/>
+            <font color="#ff5800">U\'</font> - rotate the \"Up\" face counter-clockwise by a quarter turn<br/>
+            <font color="#ff5800">U2</font> - do a double turn of the \"Up\" face<br/><br/>
+            And so, the following algorithm, <font color="#ff5800">F2 D\' B R2</font>, would be
+            performed as:<br/><br/>
+            <font color="#ff5800">F2</font> - A double turn of the front face<br/>
+            <font color="#ff5800">D\'</font> - Counter-clockwise turn of the down face<br/>
+            <font color="#ff5800">B</font>  - A clockwise turn of the back face<br/>
+            <font color="#ff5800">R2</font> - A double turn of the right face<br/><br/>
+            When performing an algorithm it is important to not rotate the cube around since it
+            will defeat the purpose of <font color="#ff5800">FLUBDR</font> moves.<br/><br/>
+            Here are examples of a few turns performed from the following starting position:
+            ]]>
+        </item>
+    </string-array>
+
+    <string name="beg_white_cross">
+        <![CDATA[
+        The first step in solving cube is solving the white cross. Technically, we can
+        start by solving any color\'s cross and then working from there but white is
+        commonly used as a standard.<br/><br/>
+        This step is very easy and you should be able to do it without
+        needing to memorize any algorithms.<br/><br/>
+        For this step, we hold the cube with the white face on top.<br/><br/>
+        To solve the white cross, we need to place 4 edges (white-green, white-red,
+        white-blue, and white-orange) in the right place. All you have to do is insert
+        each piece one by one into their place without disturbing the one\'s already
+        inserted.<br/><br/>
+        It helps to remember where the colors are position with respect to each other.
+        For example, on a standard cube, we know that if white is the <font color="#ff5800">U</font>
+        face and green is the <font color="#ff5800">F</font> face, then<br/><br/>
+        <font color="#ff5800">R</font> face - Red<br/>
+        <font color="#ff5800">L</font> face - Orange<br/>
+        <font color="#ff5800">B</font> face - Blue<br/>
+        <font color="#ff5800">D</font> face - Yellow<br/><br/>
+        The basic trick for inserting each piece is as follows:<br/><br/>
+        1) Move the piece you want to insert to the middle layer<br/><br/>
+        2) Rotate the <font color="#ff5800">U</font> layer so that the piece can then be moved to
+        the top with the white side on top<br/><br/>
+        3) Move the piece to the top layer<br/><br/>
+        4) Rotate the top layer to match the inserted piece\'s side color (red, green,
+        orange, or blue) to it\'s respective face (the face where the center piece\'s
+        color is the same)<br/><br/>
+        When you have solved the cross, your cube should like the second image above
+        and each of the colors on the side should match with the center colors on that
+        face.<br/><br/>
+        Here are a few examples of inserting a single piece starting from basic to
+        more advanced cases:
+        ]]>
+    </string>
+
+    <string name="beg_white_corners">
+        <![CDATA[
+        This step involves solving the 4 white corners and thus completing the white
+        face. Most of these algorithms are intuitive and you should try to follow
+        the pieces while performing the algorithm to understand what is going on.<br/><br/>
+        There are only 4 main cases you will encounter and they are shown below.
+        ]]>
+    </string>
+
+    <string name="beg_middle_edges">
+        <![CDATA[
+        At this point, turn the cube upside down so that the solved face (white) is on
+        the bottom.<br/><br/>
+        Next, you will insert the 4 edges in the middle layer and thus solve
+        the first two layers. For this step, you need the edge piece to be in the
+        bottom layer. If instead it is in the middle layer and inserted incorrectly,
+        just insert a different piece and chances are that you might end up moving the
+        piece to the bottom layer. If not, see the third case below.<br/><br/>
+        In this step, you will encounter 1 of these 3 cases.
+        ]]>
+    </string>
+
+    <string name="beg_o_yellow_cross">
+        <![CDATA[
+        This step requires you to memorize only 1 algorithm that you will repeat either 1, 2
+        or 3 times depending on the case you get.
+        ]]>
+    </string>
+
+    <string name="beg_o_yellow_corners">
+        <![CDATA[
+        Similar to solving the yellow cross, for this step, you will need to memorize 1
+        algorithm that you will repeat a different number of times for 7 different cases.
+        ]]>
+    </string>
+
+    <string name="beg_p_yellow_corners">
+        <![CDATA[
+        In this step, we are going to move the top layer corners around so that they
+        line up with their respective faces.<br/><br/>
+        You only need to learn 1 algorithm.
+        ]]>
+    </string>
+
+    <string name="beg_p_yellow_edges">
+        <![CDATA[
+        This is the final step and then you will have solved the cube! Yay!<br/><br/>
+        This step also requires only learning 1 algorithm.
+        ]]>
+    </string>
+
+    <string name="cfop_cross">
+        <![CDATA[
+        Solving the cross is completely intuitive and does not require learning any algorithms.<br/><br/>
+        Once you are comfortable solving the cross on top, you should start solving the cross on the
+        bottom. This helps you speed up your time by letting you look-ahead into the F2L
+        step by tracking potential pairs while still solving the cross.<br/><br/>
+        Every cross can be optimally solved in 8 moves or less while in most cases it should take
+        around 6 or 7 moves. However, it can be difficult to see the optimal solution every time so
+        it is important to achieve a balance between speed and reducing your move count.<br/><br/>
+        When inserting the 4 edges, rather than inserting the edges one by one, you should try to
+        insert the edges while setting others up for easier insertion.<br/><br/>
+        Below are a few tricks for inserting edges into their positions.
+        ]]>
+    </string>
+
+    <string name="arrow_right">Right Arrow Image</string>
+    <string name="cube_orientation">Cube Orientation Image</string>
+    <string name="cube_solved">Cube Solved Image</string>
+    <string name="cube_move_example">Cube Move Example Image</string>
+    <string name="cube_step_start_state">Step Start State Image</string>
+    <string name="cube_step_end_state">Step End State Image</string>
+    <string name="back">Back</string>
+
+    <string name="settings_delete_confirmation">Confirm before deleting solve time</string>
+    <string name="settings_show_scramble">Show scrambles</string>
+    <string name="settings_switch_puzzles">Switch puzzles</string>
+    <string name="settings_timer_start_delay">Timer start delay</string>
+    <string name="settings_timer_inspection_time">Inspection Time</string>
+    <string name="settings_exit_confirmation">Show confirmation before exiting</string>
+    <string name="settings_msim">Multi-step Timer Input Method</string>
+    <string name="settings_msim_store_time_warning">Solve times will not be saved in this mode!</string>
+
+    <string name="help_navigation_drawer">
+        Swipe in from the left to open the navigation drawer
+    </string>
+
+    <string-array name="help_timer">
+        <item>Timer for timing your solves</item>
+        <item>Displays basic statistics about your solves for the current puzzle</item>
+        <item>Also generates scrambles for the current puzzle</item>
+        <item>Landscape mode for clutter-free timing</item>
+    </string-array>
+
+    <string-array name="help_timer_ms">
+        <item>Multi-step timer for timing individual steps in your solve</item>
+        <item>To configure, first go to settings and select the input type and number
+        of steps that you would like to record</item>
+        <item>Tap mode: Tap the timer after each step to store that step\'s time</item>
+        <item>Shake mode: Keep your phone in your lap or somewhere similar and shake the phone
+        after every step. Tap on the timer to end</item>
+        <item>Using this mode will not save your solve times</item>
+        <item>See the list on the right to see your cumulative times for each step</item>
+    </string-array>
+
+    <string-array name="help_statistics">
+        <item>A list of all the solve times for the current puzzle</item>
+        <item>Option to delete select or all solve times</item>
+        <item>Comprehensive statistics for the current puzzle</item>
+    </string-array>
+
+    <string-array name="help_cfop">
+        <item>Algorithm bank for different methods of solving the Rubik\'s Cube</item>
+        <item>Unique OLL selector for quickly getting the desired OLL algorithms</item>
+        <item>Landscape mode for clutter-free algorithm lists</item>
+    </string-array>
+
+    <string-array name="help_beginners">
+        <item>Step by step tutorial for the beginners method of solving the Rubik\'s Cube</item>
+        <item>Includes explanation of notations used in algorithms</item>
+    </string-array>
+
+    <string-array name="help_settings">
+        <item>Customize app experience</item>
+        <item>Multiple puzzles support for different time statistics as well as scrambles</item>
+    </string-array>
+
+    <string-array name="help_feedback">
+        <item>Send feedback to the app developers for improvements, suggestions, or even thanks!</item>
+    </string-array>
+
+    <string-array name="help_rate">
+        <item>Rate the app in the Google Play Store (keeps the developers motivated!)</item>
+    </string-array>
+
+    <string name="help_about">
+        <![CDATA[
+        I would like to (and have to) give credit to all the resources that I used for
+        creating this app.<br/><br/>
+        <a href="https://icons8.com/android-icons">Icons downloaded from Icons8</a><br/><br/>
+
+        The following sites were used in the making of the CFOP and Beginners sections:<br/><br/>
+        <a href="speedsolving.com">Speedsolving.com</a><br/>
+        <a href="cubewhiz.com">Bob Burton\'s cubewhiz.com</a><br/>
+        <a href="aldb.net">AlgDb.Net</a><br/>
+        <a href="ryanheise.com">Ryan Heise</a><br/>
+        <a href="ruwix.com">Ruwix.com</a><br/><br/>
+        <a href="http://kociemba.org/cube.htm">Kociemba\'s Two-Phase-Algorithm</a> random state
+        scrambler was used to generate the scrambles
+        ]]>
+    </string>
+
+</resources>

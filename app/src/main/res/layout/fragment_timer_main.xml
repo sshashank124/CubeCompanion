@@ -1,0 +1,155 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qbix.cubecompanion.TimerMainFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/timer_cancel"
+        android:text="@string/timer_cancel"
+        android:visibility="gone"
+        style="@style/large_button"/>
+
+    <Button
+        android:id="@+id/timer_clear"
+        android:text="@string/timer_clear"
+        style="@style/large_button"/>
+
+    <LinearLayout
+        android:id="@+id/timer_stats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/puzzle_type"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/inset_view_blue"
+                style="@style/description_tab"/>
+
+            <TextView
+                android:id="@+id/timer_new_session"
+                android:text="@string/timer_new_session"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/inset_view_yellow"
+                style="@style/description_tab"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/penalty_DNF"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="@dimen/spacing_0.5"
+                android:text="@string/penalty_DNF"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/button"/>
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:stretchColumns="*">
+                <TableRow android:layout_weight="1">
+                    <TextView android:text="@string/statistics_solves" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_solves" style="@style/timer_statistics_value"
+                        android:text="@string/count_empty"/>
+                    <TextView android:text="@string/statistics_average" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_average" style="@style/timer_statistics_value"/>
+                </TableRow>
+                <TableRow android:layout_weight="1">
+                    <TextView android:text="@string/statistics_best" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_best" style="@style/timer_statistics_value"/>
+                    <TextView android:text="@string/statistics_worst" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_worst" style="@style/timer_statistics_value"/>
+                </TableRow>
+                <TableRow android:layout_weight="1">
+                    <TextView android:text="@string/statistics_average_5" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_average_5" style="@style/timer_statistics_value"/>
+                    <TextView android:text="@string/statistics_average_12" style="@style/timer_statistics_label"/>
+                    <TextView android:id="@+id/timer_statistics_average_12" style="@style/timer_statistics_value"/>
+                </TableRow>
+            </TableLayout>
+
+            <TextView
+                android:id="@+id/penalty_2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="@string/penalty_2"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_display_stopped_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:background="@drawable/timer_stopped">
+
+        <TextView
+            android:id="@+id/scramble_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            style="@style/scramble_text"/>
+
+        <TextView
+            android:id="@+id/timer_display_stopped"
+            android:text="@string/time_0"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_display_inspection_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/timer_stopped">
+
+        <TextView
+            android:id="@+id/timer_display_inspection"
+            android:layout_centerInParent="true"
+            android:textSize="120sp"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_display_running_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/inset_view_blue">
+
+        <TextView
+            android:id="@+id/timer_display_running"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

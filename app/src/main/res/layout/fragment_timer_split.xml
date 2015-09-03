@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qbix.cubecompanion.TimerSplitFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/ts_layout_1"
+        style="@style/timer_start_stop_button_layout"
+        android:background="@drawable/timer_stopped"
+        android:rotation="180">
+
+        <TextView
+            android:id="@+id/scramble_text_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            style="@style/scramble_text"/>
+
+        <TextView
+            android:id="@+id/ts_1"
+            android:text="@string/time_0"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tr_layout_1"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/inset_view_blue"
+        android:rotation="180">
+
+        <TextView
+            android:id="@+id/tr_1"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ts_layout_2"
+        style="@style/timer_start_stop_button_layout"
+        android:background="@drawable/timer_stopped">
+
+        <TextView
+            android:id="@+id/scramble_text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            style="@style/scramble_text"/>
+
+        <TextView
+            android:id="@+id/ts_2"
+            android:text="@string/time_0"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tr_layout_2"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/inset_view_blue">
+
+        <TextView
+            android:id="@+id/tr_2"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

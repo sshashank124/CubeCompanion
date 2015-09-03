@@ -1,0 +1,81 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qbix.cubecompanion.TimerMultiStepFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/timer_cancel"
+        android:text="@string/timer_cancel"
+        android:visibility="gone"
+        style="@style/large_button"/>
+
+    <Button
+        android:id="@+id/timer_clear"
+        android:text="@string/timer_clear"
+        style="@style/large_button"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:id="@+id/timer_details"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+            <ListView
+                android:id="@+id/steps_list"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/timer_display_stopped_layout"
+            style="@style/timer_start_stop_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/timer_stopped">
+
+            <TextView
+                android:id="@+id/scramble_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:textSize="18sp"
+                style="@style/scramble_text"/>
+
+            <TextView
+                android:id="@+id/timer_display_stopped"
+                android:text="@string/time_0"
+                android:layout_centerInParent="true"
+                style="@style/timer_start_stop_button"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/timer_display_running_layout"
+            style="@style/timer_start_stop_button_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone"
+            android:background="@drawable/inset_view_blue">
+
+            <TextView
+                android:id="@+id/timer_display_running"
+                android:layout_centerInParent="true"
+                style="@style/timer_start_stop_button"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

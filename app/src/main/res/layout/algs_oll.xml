@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_green"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/spacing_0.5"
+        android:layout_marginLeft="@dimen/spacing_0.5"
+        android:layout_marginRight="@dimen/spacing_0.5"
+        android:padding="@dimen/spacing_0.5">
+
+        <ImageView
+            android:id="@+id/start_state"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/cube_step_start_state"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:contentDescription="@string/arrow_right"
+            android:src="@drawable/arrow_right" />
+
+        <ImageView
+            android:id="@+id/end_state"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:contentDescription="@string/cube_step_end_state"
+            android:scaleType="centerInside" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/oll_selector"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv0"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv1"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv2"
+                style="@style/cfop_page_oll_selector_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv3"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView
+                android:id="@+id/sv4"
+                android:background="@color/light_yellow"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv5"
+                style="@style/cfop_page_oll_selector_button"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv6"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv7"
+                style="@style/cfop_page_oll_selector_button"/>
+            <com.qbix.cubecompanion.SquareView android:id="@+id/sv8"
+                style="@style/cfop_page_oll_selector_button"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/algorithms_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="@dimen/spacing_0.5"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/show_oll_selector"
+            style="@style/button"
+            android:text="@string/back"/>
+
+        <ListView
+            android:id="@+id/algorithms_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_0.5"
+            android:background="@color/gray_0.5" />
+
+    </LinearLayout>
+
+</LinearLayout>

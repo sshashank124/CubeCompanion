@@ -1,0 +1,63 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qbix.cubecompanion.StatisticsTimesListPage">
+
+    <TextView
+        android:id="@+id/puzzle_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/inset_view_blue"
+        style="@style/description_tab"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="@dimen/spacing_0.5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/manual_add_solve_time"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/plus"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:id="@+id/times_list_delete_all"
+                android:text="@string/times_list_delete_all"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/spacing_0.5"
+                style="@style/large_button"/>
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/times_list_grid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/spacing_0.5"
+            android:divider="@null"
+            android:scrollbars="none">
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/times_list_delete_all_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="?android:attr/progressBarStyle"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>

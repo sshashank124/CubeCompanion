@@ -1,0 +1,17 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/spacing_0.5"
+    android:orientation="vertical"
+    tools:context="com.qbix.cubecompanion.HelpAboutPage">
+
+    <TextView
+        android:id="@+id/help_about_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:lineSpacingMultiplier="1.4"/>
+
+</ScrollView>

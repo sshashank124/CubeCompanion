@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/spacing_2.0"
+    android:padding="@dimen/spacing_0.5">
+
+    <ImageView
+        android:id="@+id/cube_state"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="@dimen/spacing_0.5"
+        android:layout_marginEnd="@dimen/spacing_0.5"
+        android:layout_marginTop="@dimen/spacing_0.5"
+        android:scaleType="centerInside"
+        android:contentDescription="@string/cube_move_example"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/algorithm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/spacing_0.5"
+            android:textColor="@color/yellow"
+            android:textSize="16sp"
+            android:lineSpacingMultiplier="1.2"/>
+
+        <TextView
+            android:id="@+id/algorithm_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:lineSpacingMultiplier="1.2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

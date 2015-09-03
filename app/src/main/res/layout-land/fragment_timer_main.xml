@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.qbix.cubecompanion.TimerMainFragment">
+
+    <RelativeLayout
+        android:id="@+id/timer_display_stopped_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:background="@drawable/timer_stopped">
+
+        <TextView
+            android:id="@+id/scramble_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp"
+            style="@style/scramble_text"/>
+
+        <TextView
+            android:id="@+id/timer_display_stopped"
+            android:text="@string/time_0"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_display_inspection_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/timer_stopped">
+
+        <TextView
+            android:id="@+id/timer_display_inspection"
+            android:layout_centerInParent="true"
+            android:textSize="120sp"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/timer_display_running_layout"
+        style="@style/timer_start_stop_button_layout"
+        android:visibility="gone"
+        android:background="@drawable/inset_view_blue">
+
+        <TextView
+            android:id="@+id/timer_display_running"
+            android:layout_centerInParent="true"
+            style="@style/timer_start_stop_button"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
