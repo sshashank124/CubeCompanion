@@ -7,16 +7,15 @@
 ### All-in-one resource for cubing enthusiasts
 
 It includes the following features:
-Timer (including clutter-free landscape timing mode)
-Timer Features(+2 and DNF penalty and inspection time features)
-Multi-step Timer mode for timing different sections in your solving method
-Basic Statistics
-Comprehensive Statistics
-Graphs of Solve Time Progress
-Multiple Puzzles Support
-Easy solve times management (with manual entry support)
-Beginners tutorial for 3 x 3
-Advanced methods algorithms bank for many different methods
-Customizable settings
-
-A clean, vibrant and appealing UI.
+ * Timer (including clutter-free landscape timing mode)
+ * Timer Features(+2 and DNF penalty and inspection time features)
+ * Multi-step Timer mode for timing different sections in your solving method
+ * Basic Statistics
+ * Comprehensive Statistics
+ * Graphs of Solve Time Progress
+ * Multiple Puzzles Support
+ * Easy solve times management (with manual entry support)
+ * Beginners tutorial for 3 x 3
+ * Advanced methods algorithms bank for many different methods
+ * Customizable settings
+ * A clean, vibrant and appealing UI.
